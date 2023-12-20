@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danime</title>
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="anime style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    
+
+
+    <header>
+        <a href="video.html" class="logo"><i class="fas fa-infinity"></i>Danime.</a>
+        <nav class="navbar">
+             <a href="anime.html">home</a>
+             <a href="anime top 10.html">top-5</a>
+             <a href="anime login.html">account</a>
+             <a href="anime contact.html">contact us</a>
+             <a href="list.html">List</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="search" />
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+
+
+
+<section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box " style="background: url(images/wallpaperflare.com_wallpaper\ \(2\).jpg) no-repeat;">
+                    <div class="content">
+                        <img src="images/Attack-on-Titan-Logo.png" class="movie-title" />
+                        <p>High roller Yumeko Jabami plans to clean house at Hyakkaou Private<br>
+                        Academy, a school where students are evaluated solely on their<br>
+                        gambling skills.</p>
+                        <div class="button">
+                            <a href="attack.html"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+                            <a href="#" onclick="openModal('video/Ashes_On_Fire🔥___Attack_On_Titan____𝘼𝙈𝙑𝙀𝙙𝙞𝙩___.mp4')"><i class="fa fa-plus" aria-hidden="true"></i>Trailer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box second" style="background: url(images/wallpaperflare.com_wallpaper.jpg) no-repeat;">
+                    <div class="content">
+                        <img src="images/Black_Clover_Logo.png" class="movie-title" />
+                         <p>When a Japanese high schooler comes into possession of a mystical<br>
+                        notebook, he finds he has the power to kill anybody whose name he<br>
+                        enters in it.</p>
+                        <div class="button">
+                            <a href="black clover.html"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+                            <a href="#" onclick="openModal('video/Demons In My Soul I Asta Black Clover [AMVEdit].mp4')"><i class="fa fa-plus" aria-hidden="true"></i>Trailer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box " style="background: url(images/1205865.png) no-repeat;">
+                    <div class="content">
+                        <img src="images/Naruto_logo.svg.png" class="movie-title" />
+                         <p>The most powerful superhero in the world can kill anyone with one<br>
+                        blow. But nothing can challenge him, so he struggles with ennui and<br>
+                        depression</p>
+                        <div class="button">
+                            <a href="naruto.html"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+                            <a href="#" onclick="openModal('video/NAruto.mp4')"><i class="fa fa-plus" aria-hidden="true"></i>Trailer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box " style="background: url(images/wallpaperflare.com_wallpaper\ \(10\).jpg) no-repeat;">
+                    <div class="content">
+                        <img src="images/Chainsaw_Man_logo.png" class="movie-title" />
+                         <p>The most powerful superhero in the world can kill anyone with one<br>
+                        blow. But nothing can challenge him, so he struggles with ennui and<br>
+                        depression</p>
+                        <div class="button">
+                            <a href="chainsaw.html"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+                            <a href="#" onclick="openModal('video/_Aki & Himeno_ - Golden Hour [AMVEdit] by Nelo.mp4')"><i class="fa fa-plus" aria-hidden="true"></i>Trailer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box " style="background: url(images/wallpaperflare.com_wallpaper\ \(1\).jpg) no-repeat;">
+                    <div class="content">
+                        <img src="images/Bleach-Anime-PNG-Pic-1.png" class="movie-title" />
+                        <p>The story follows the adventures of Ichigo Kurosaki<br>
+                         after he obtains the powers of a Soul Reaper—a death personification<br>
+                          similar to the Grim Reaper—from another Soul Reaper, Rukia Kuchiki.</p>
+                       
+                        <div class="button">
+                            <a href="bleach.html"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+                            <a href="#" onclick="openModal('video/Bleach🌙 - Middle of the Night [ AMVEDIT] !.mp4')"><i class="fa fa-plus" aria-hidden="true"></i>Trailer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <video id="modalVideo" controls class="modal-video">
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+
+
+
+<section class="anime" id="anime">
+    <h1 class="heading">Popular on Anime</h1>
+    <div class="swiper anime-slider">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box" style="background: url(images/1205865.png) no-repeat;"></div>
+                <div class="content">
+                    <h3>Naruto</h3>
+                    <p>Guided by the spirit demon within him, orphaned Naruto learns
+                    to harness his powers as a ninja in this anime adventure series.</p>
+                    <a href="naruto.html" class="btn">Watch</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box" style="background: url(images/wallpaperflare.com_wallpaper\ \(5\).jpg) no-repeat;"></div>
+                <div class="content">
+                    <h3>One-Punch Man</h3>
+                    <p>Guided by the spirit demon within him, orphaned Naruto learns
+                    to harness his powers as a ninja in this anime adventure series.</p>
+                    <a href="one.html" class="btn">Watch</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box" style="background: url(images/wallpaperflare.com_wallpaper\ \(6\).jpg) no-repeat;"></div>
+                <div class="content">
+                    <h3>DEATH NOTE</h3>
+                    <p>Guided by the spirit demon within him, orphaned Naruto learns
+                    to harness his powers as a ninja in this anime adventure series.</p>
+                    <a href="Death.html" class="btn">Watch</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box" style="background: url(images/wallpaperflare.com_wallpaper.jpg) no-repeat;"></div>
+                <div class="content">
+                    <h3>Black Clover</h3>
+                    <p>Guided by the spirit demon within him, orphaned Naruto learns
+                    to harness his powers as a ninja in this anime adventure series.</p>
+                    <a href="black clover.html" class="btn">Watch</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box" style="background: url(images/wallpaperflare.com_wallpaper\ \(7\).jpg) no-repeat;"></div>
+                <div class="content">
+                    <h3>Jujutsu Kaisen</h3>
+                    <p>Guided by the spirit demon within him, orphaned Naruto learns
+                    to harness his powers as a ninja in this anime adventure series.</p>
+                    <a href="Jujutsu.html" class="btn">Watch</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box" style="background: url(images/wallpaperflare.com_wallpaper\ \(8\).jpg) no-repeat;"></div>
+                <div class="content">
+                    <h3>Mushoku Tensei</h3>
+                    <p>Guided by the spirit demon within him, orphaned Naruto learns
+                    to harness his powers as a ninja in this anime adventure series.</p>
+                    <a href="Mushoku.html" class="btn">Watch</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box" style="background: url(images/wallpaperflare.com_wallpaper\ \(1\).jpg) no-repeat;"></div>
+                <div class="content">
+                    <h3>Bleach</h3>
+                    <p>Guided by the spirit demon within him, orphaned Naruto learns
+                    to harness his powers as a ninja in this anime adventure series.</p>
+                    <a href="bleach.html" class="btn">Watch</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box" style="background: url(images/wallpaperflare.com_wallpaper\ \(3\).jpg) no-repeat;"></div>
+                <div class="content">
+                    <h3>My Hero Academia</h3>
+                    <p>Guided by the spirit demon within him, orphaned Naruto learns
+                    to harness his powers as a ninja in this anime adventure series.</p>
+                    <a href="hero.html" class="btn">Watch</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box" style="background: url(images/wallpaperflare.com_wallpaper\ \(4\).jpg) no-repeat;"></div>
+                <div class="content">
+                    <h3>Dr. Stone</h3>
+                    <p>Guided by the spirit demon within him, orphaned Naruto learns
+                    to harness his powers as a ninja in this anime adventure series.</p>
+                    <a href="stone.html" class="btn">Watch</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box" style="background: url(images/wallpaperflare.com_wallpaper\ \(2\).jpg) no-repeat;"></div>
+                <div class="content">
+                    <h3>Attack on Titan</h3>
+                    <p>Guided by the spirit demon within him, orphaned Naruto learns
+                    to harness his powers as a ninja in this anime adventure series.</p>
+                    <a href="attack.html" class="btn">Watch</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box" style="background: url(images/wallpaperflare.com_wallpaper\ \(11\).jpg) no-repeat;"></div>
+                <div class="content">
+                    <h3>Vinland Saga</h3>
+                    <p>Guided by the spirit demon within him, orphaned Naruto learns
+                    to harness his powers as a ninja in this anime adventure series.</p>
+                    <a href="vinland.html" class="btn">Watch</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box" style="background: url(images/wallpaperflare.com_wallpaper\ \(10\).jpg) no-repeat;"></div>
+                <div class="content">
+                    <h3>Chainsaw Man</h3>
+                    <p>Guided by the spirit demon within him, orphaned Naruto learns
+                    to harness his powers as a ninja in this anime adventure series.</p>
+                    <a href="chainsaw.html" class="btn">Watch</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact-container">
+        <h2>Contact Me</h2>
+        <a href="https://instagram.com/diazeroxww?igshid=NzZlODBkYWE4Ng==" id="insta"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>
+        <a href="https://youtu.be/KH7_duJjJLg?si=_fqFIoehmex7Poxm" id="youtube"><i class="fa fa-youtube-play fa-4x" aria-hidden="true"></i></a>
+        <a href="#" id="telega"><i class="fa fa-telegram fa-4x" aria-hidden="true"></i></a>
+    </div>
+</section>
+
+<table>
+    <thead>
+        <tr>
+            <th>Anime</th>
+            <th>Genre</th>
+            <th>Main Characters</th>
+            <th>Release Year</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Naruto</td>
+            <td>Shounen, Action, Adventure</td>
+            <td>Naruto, Sasuke, Sakura</td>
+            <td>2002</td>
+        </tr>
+        <tr>
+            <td>Bleach</td>
+            <td>Shounen, Action, Supernatural</td>
+            <td>Ichigo, Rukia, Renji</td>
+            <td>2004</td>
+        </tr>
+        <tr>
+            <td>Attack on Titan</td>
+            <td>Action, Drama, Fantasy</td>
+            <td>Eren, Mikasa, Armin</td>
+            <td>2013</td>
+        </tr>
+        <tr>
+            <td>Mushoku Tensei</td>
+            <td>Isekai, Fantasy</td>
+            <td>Rudeus, Eris, Roxy</td>
+            <td>2021</td>
+        </tr>
+        <tr>
+            <td>Chainsaw Man</td>
+            <td>Dark Fantasy, Horror</td>
+            <td>Denji, Power, Aki</td>
+            <td>2022</td>
+        </tr>
+        <tr>
+            <td>Vinland Saga</td>
+            <td>Historical, Action, Drama</td>
+            <td>Thorfinn, Askeladd, Canute</td>
+            <td>2019</td>
+        </tr>
+        <tr>
+            <td>Black Clover</td>
+            <td>Shounen, Magic, Fantasy</td>
+            <td>Asta, Yuno, Noelle</td>
+            <td>2017</td>
+        </tr>
+        <tr>
+            <td>Death Note</td>
+            <td>Psychological, Thriller</td>
+            <td>Light, L, Ryuk</td>
+            <td>2006</td>
+        </tr>
+        <tr>
+            <td>One Punch Man</td>
+            <td>Action, Comedy, Superhero</td>
+            <td>Saitama, Genos, Mumen Rider</td>
+            <td>2015</td>
+        </tr>
+        <tr>
+            <td>My Hero Academia</td>
+            <td>Shounen, Superhero, Action</td>
+            <td>Izuku, Bakugo, All Might</td>
+            <td>2016</td>
+        </tr>
+        <tr>
+            <td>Dr. Stone</td>
+            <td>Adventure, Sci-Fi</td>
+            <td>Senku, Taiju, Yuzuriha</td>
+            <td>2019</td>
+        </tr>
+        <tr>
+            <td>Jujutsu Kaisen</td>
+            <td>Supernatural, Action</td>
+            <td>Yuji, Megumi, Nobara</td>
+            <td>2020</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+<div class="copyright container">
+    <a href="#" class="logo"><i class="fas fa-infinity"></i>Danime.</a>
+    <p>&#169; Danime. Made with Love.</p>
+</div>
+
+
+
+ <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer data-deferred="1"></script>  <script src="anime js.js" defer data-deferred="1"></script> 
+</body>
+
+</html>

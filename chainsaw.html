@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Page</title>
+    <link rel="stylesheet" href="chainsaw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+<body>
+    <header>
+        <a href="video.html" class="logo"><i class="fas fa-infinity"></i>Danime.</a>
+        <nav class="navbar">
+             <a href="anime.html">home</a>
+             <a href="anime top 10.html">top-5</a>
+             <a href="anime login.html">account</a>
+             <a href="anime contact.html">contact us</a>
+             <a href="list.html">List</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="search" />
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+<section class="back">
+     <div class="container">
+         <div id="poster">
+             <img src="images/ea075b926e1073f4eb016bff8cdb434c.jpe" alt="Anime Poster">
+             <img src="images/Chainsaw_Man_logo.png" alt="" id="poster-logo">
+             <p>Anime | 20 min | Battle</p>
+
+         </div>
+         <div id="description">
+             <h1>Chainsaw Man</h1>
+             <p>Naruto is a Japanese anime series based on the manga of the same name written and illustrated by Masashi Kishimoto. Originally serialized in the manga magazine Weekly Shōnen Jump from 1999 to 2014, the anime adaptation has become a cultural phenomenon, captivating audiences around the world with its rich storytelling, complex characters, and intense action sequences.</p> ,<br>
+             <p>The story of Naruto follows the journey of Naruto Uzumaki, a young ninja with dreams of becoming the strongest ninja and earning the title of Hokage, the leader of his village, the Hidden Leaf Village (Konohagakure). However, Naruto carries a burden that sets him apart from others - he is the host of the Nine-Tailed Fox, a powerful and malevolent beast that attacked the village years before his birth. As a result, Naruto faces prejudice and loneliness from his fellow villagers who see him as the embodiment of the danger that the Nine-Tails represents.</p> <br><br><br><br><br>
+         </div>
+         <img src="images/revenge.png" alt="" id="clickImage" style="cursor: pointer;">
+
+
+        <div id="textContainer">
+            <img src="images/himeno_png_by_zelrom_dfjke2h-fullview.png" alt="">
+            Don't die, Aki
+        </div>
+
+        <div class="rating-container" id="ratingContainer">
+            <span class="star" onclick="rate(1)" id="star1">&#9733;</span>
+            <span class="star" onclick="rate(2)" id="star2">&#9733;</span>
+            <span class="star" onclick="rate(3)" id="star3">&#9733;</span>
+            <span class="star" onclick="rate(4)" id="star4">&#9733;</span>
+            <span class="star" onclick="rate(5)" id="star5">&#9733;</span>
+        </div>
+
+    
+
+         <div id="video">
+             <video src="video/_Aki & Himeno_ - Golden Hour [AMVEdit] by Nelo.mp4" controls width="1160px" height="600px"></video>
+         </div>
+     </div>
+
+     <div class="copyright">
+           <a href="#" class="logo"><i class="fas fa-infinity"></i>Danime.</a>
+          <p>&#169; Danime. Made with Love.</p>
+     </div>
+</section>
+
+<script>
+
+    function ShowText() {
+        
+        const textContainer = document.getElementById("textContainer");
+        
+        textContainer.style.transform = "translateX(-100%)";
+        
+        setTimeout(() => {
+            textContainer.style.transform = "translateX(0)";
+        }, 100);
+        
+        setTimeout(() => {
+            textContainer.style.transform = "translateX(-100%)";
+        }, 7000); 
+    }
+
+    document.getElementById("clickImage").addEventListener("click", ShowText);
+</script>
+<script src="rating.js"></script>
+
+</body>
+</html>
